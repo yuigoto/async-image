@@ -1,0 +1,9 @@
+# .npmignore
+.idea
+.vscode
+.vs
+src
+examples
+.babelrc
+.gitignore
+webpack.config.js

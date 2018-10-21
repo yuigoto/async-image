@@ -1,0 +1,48 @@
+.async-image {
+  background: #eee;
+  width: 100%;
+  padding: 0 0 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.async-image-error {
+}
+
+.async-image-loading {
+}
+
+.async-image-placeholder {
+  width: 160%;
+  margin: auto;
+  position: absolute;
+  top: -1000%;
+  right: -1000%;
+  bottom: -1000%;
+  left: -1000%;
+}
+
+.async-image-item {
+  width: 160%;
+  margin: auto;
+  position: absolute;
+  top: -1000%;
+  right: -1000%;
+  bottom: -1000%;
+  left: -1000%;
+  animation: async-image-show 1s;
+}
+
+@keyframes async-image-show {
+  from {
+    transform: scale(1.5);
+    filter: blur(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
