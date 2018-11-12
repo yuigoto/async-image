@@ -131,14 +131,6 @@ class AsyncImage extends Component {
 
   componentDidUpdate() {
     const { state } = this;
-
-    if (!state.loading_finished && state.image_loaded === true) {
-      this.setState({
-        loading_finished: true
-      });
-
-      console.log("Finished loading.");
-    }
   }
 
   render() {
